@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_OuWVIIZXEeawbKGHyqf-5g">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_cYUf4IZZEeawbKGHyqf-5g" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_dfgxcIZZEeawbKGHyqf-5g" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry" description="It is a context used for identifying entry context in grits"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_mk884IZiEeawbKGHyqf-5g" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_sYr2EIZiEeawbKGHyqf-5g" elementId="org.grits.toolbox.entry.qrtpcr.editor" label="QrtPCR Table Editor" iconURI="platform:/plugin/org.grits.toolbox.entry.qrtpcr/icons/qrtPCR.png" bindingContexts="_dfgxcIZZEeawbKGHyqf-5g" allowMultiple="true" category="org.grits.toolbox.property.qrtpcr" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.editor.QrtPCRTableEditor">
+      <tags>default</tags>
+      <tags>perspective:org.grits.toolbox.entry.qrtpcr.perspective</tags>
+      <toolbar xmi:id="_4LANkIZiEeawbKGHyqf-5g" elementId="org.grits.toolbox.entry.qrtpcr.toolbar.tableeditor"/>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_pxCB4IZjEeawbKGHyqf-5g" elementId="org.grits.toolbox.entry.qrtpcr.editor.merge" label="Merge Report Editor" iconURI="platform:/plugin/org.grits.toolbox.entry.qrtpcr/icons/qrtPCR.png" bindingContexts="_dfgxcIZZEeawbKGHyqf-5g" allowMultiple="true" category="org.grits.toolbox.property.qrtpcr.merge" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.editor.MergeReportEditor">
+      <tags>default</tags>
+      <tags>perspective:org.grits.toolbox.entry.qrtpcr.perspective</tags>
+      <toolbar xmi:id="_x1dLUIZjEeawbKGHyqf-5g" elementId="org.grits.toolbox.entry.qrtpcr.toolbar.1"/>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_6u0YsIZjEeawbKGHyqf-5g" elementId="org.grits.toolbox.entry.qrtpcr.managerEditor" label="Gene List Manager" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.manager.GeneListManagerEditor">
+      <tags>default</tags>
+      <toolbar xmi:id="_C7qeUIZkEeawbKGHyqf-5g" elementId="org.grits.toolbox.entry.qrtpcr.toolbar.2"/>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_OwmhQIsgEeapz66J6DT1CQ" elementId="qrtPCR-histogram" label="Histogram View" iconURI="" allowMultiple="true" closeable="true" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.view.HistogramView">
+      <tags>default</tags>
+      <tags>perspective:org.grits.toolbox.entry.qrtpcr.perspective</tags>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_pS5LsIpFEeapz66J6DT1CQ" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_z6CJgIpFEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.editor" commandName="qRT-PCR Data"/>
+    <elements xsi:type="commands:Command" xmi:id="_QeiEwIpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.merge" commandName="merge qRT-PCR"/>
+    <elements xsi:type="commands:Command" xmi:id="_bBqFQIpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.manager" commandName="Gene List Manager"/>
+    <elements xsi:type="commands:Command" xmi:id="_dIq1EIpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.plate" commandName="Plate Layout Tool"/>
+    <elements xsi:type="commands:Command" xmi:id="_I1QJwIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.command.export" commandName="Export qRT-PCR Data"/>
+    <elements xsi:type="commands:Command" xmi:id="_R6_mQIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.evaluateData" commandName="Evaluate Data">
+      <parameters xmi:id="_29KwMIs-Eeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.commandparameter.dataOption" name="dataOption"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_Y22lIIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.addReRun" commandName="Add Rerun"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_i_ISIIpGEeapz66J6DT1CQ" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_laSF8IpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.editor" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.CreateQrtPCRDataTable" command="_z6CJgIpFEeapz66J6DT1CQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_2iinYIpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.merge" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.CreateMergeReport" command="_QeiEwIpGEeapz66J6DT1CQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_6ZMI0IpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.manager" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.OpenGeneListManagerEditor" command="_bBqFQIpGEeapz66J6DT1CQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_9nl-gIpGEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.plate" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.OpenPlateLayoutTool" command="_dIq1EIpGEeapz66J6DT1CQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_AnyZEIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.export" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.ExportQrtPCRTable" command="_I1QJwIpHEeapz66J6DT1CQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_T1s_cIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.evaluate" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.EvaluateData" command="_R6_mQIpHEeapz66J6DT1CQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_aip_oIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handler.addrerun" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.commands.AddReRunData" command="_Y22lIIpHEeapz66J6DT1CQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_zZTwIIpHEeapz66J6DT1CQ" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.grits.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_8ilBwIpHEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.qrt-pcrdata" label="qRT-PCR" iconURI="platform:/plugin/org.grits.toolbox.entry.qrtpcr/icons/qrtPCR.png" tooltip="Create a new qrt-PCR Data Entry" command="_z6CJgIpFEeapz66J6DT1CQ"/>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_FMoAwIpIEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.mergeqrt-pcr" label="qRT-PCR Merge" tooltip="Merge and Compare qrt-PCR Data" command="_QeiEwIpGEeapz66J6DT1CQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_bptcYIpJEeapz66J6DT1CQ" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_g7rsUIpJEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.qrt-pcrdata" label="qRT-PCR" iconURI="platform:/plugin/org.grits.toolbox.entry.qrtpcr/icons/qrtPCR.png" tooltip="Create a new qrt-PCR Data Entry" command="_z6CJgIpFEeapz66J6DT1CQ"/>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_h0HJIIpJEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.mergeqrt-pcr" label="qRT-PCR Merge" tooltip="Merge and Compare qrt-PCR Data" command="_QeiEwIpGEeapz66J6DT1CQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_nPUNkIpJEeapz66J6DT1CQ" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins">
+    <elements xsi:type="menu:Menu" xmi:id="_qrGX8IpJEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.menu.qrt-pcr" label="qRT-PCR">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_vGgzUIpJEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.export" label="Export" iconURI="platform:/plugin/org.grits.toolbox.entry.qrtpcr/icons/excel.png" tooltip="Export qrt-PCR data into Excel" command="_I1QJwIpHEeapz66J6DT1CQ">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_zNPYIIpJEeapz66J6DT1CQ" coreExpressionId="org.grits.toolbox.entry.qrtpcr.enableExport"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_8GQKwIpKEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.addre-rundata" label="Add Re-Run Data" tooltip="Update qRT-PCR data with re-runs" command="_Y22lIIpHEeapz66J6DT1CQ">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_CFz5cIpLEeapz66J6DT1CQ" coreExpressionId="org.grits.toolbox.entry.qrtpcr.enableRerun"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_LAFFwIpLEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.evaluatedata" label="Evaluate Data" tooltip="Update qrtPCR data by applying pre-defined rules" command="_R6_mQIpHEeapz66J6DT1CQ"/>
+      <children xsi:type="menu:MenuSeparator" xmi:id="_SPboYIpLEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.menuseparator.0"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_TMfGgIpLEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.genelistmanager" label="Gene List Manager" tooltip="Manage master gene list" command="_bBqFQIpGEeapz66J6DT1CQ"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_YqQ90IpLEeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.handledmenuitem.platelayouttool" label="Plate Layout Tool" tooltip="Create a plate layout file for an experiment" command="_dIq1EIpGEeapz66J6DT1CQ"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZbJy4Is1Eeapz66J6DT1CQ" featurename="addons" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="application:Addon" xmi:id="_buK-YIs1Eeapz66J6DT1CQ" elementId="org.grits.toolbox.entry.qrtpcr.addon.qrtPCR" contributionURI="bundleclass://org.grits.toolbox.entry.qrtpcr/org.grits.toolbox.entry.qrtpcr.QrtPCRAddon"/>
+  </fragments>
+</fragment:ModelFragments>
