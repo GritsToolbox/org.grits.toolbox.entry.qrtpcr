@@ -5,12 +5,12 @@ import java.util.List;
 import org.eclipse.core.databinding.Binding;
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.UpdateValueStrategy;
-import org.eclipse.core.databinding.beans.PojoProperties;
+import org.eclipse.core.databinding.beans.typed.PojoProperties;
 import org.eclipse.core.databinding.validation.IValidator;
 import org.eclipse.core.databinding.validation.ValidationStatus;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.databinding.swt.SWTObservables;
+import org.eclipse.jface.databinding.swt.typed.WidgetProperties;
 import org.eclipse.jface.fieldassist.ControlDecoration;
 import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
@@ -170,7 +170,7 @@ public class SaveGeneListDialog extends FormDialog {
 		
 		DataBindingContext dataBindingContext = new DataBindingContext();
 		Binding binding = dataBindingContext.bindValue(
-			    SWTObservables.observeText(nameText, SWT.Modify),
+				WidgetProperties.text(SWT.Modify).observe(nameText),
 			    PojoProperties.value(SaveGeneListDialog.class, "name").observe(this),
 			    new UpdateValueStrategy()
 			        .setAfterConvertValidator(new StringRequiredValidator(
@@ -180,7 +180,7 @@ public class SaveGeneListDialog extends FormDialog {
 		
 		DataBindingContext dataBindingContext2 = new DataBindingContext();
 		Binding binding2 = dataBindingContext2.bindValue(
-			    SWTObservables.observeText(organismText, SWT.Modify),
+				WidgetProperties.text(SWT.Modify).observe(organismText),
 			    PojoProperties.value(SaveGeneListDialog.class, "organism").observe(this),
 			    new UpdateValueStrategy()
 			        .setAfterConvertValidator(new StringRequiredValidator(
